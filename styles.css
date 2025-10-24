@@ -109,3 +109,16 @@ html {
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 360px) {
+    .position-relative img {
+        min-height: 260px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-md {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
