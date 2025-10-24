@@ -75,45 +75,125 @@
     <div class="container-md mt-2 mb-5 pb-4">
         <div class="row">
 
-            <div class="col-lg-7 col-md-7 mt-4">
-                <form class="needs-validation" novalidate>
-                    <div class="mb-3">
-                        <label for="exampleInputName1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="exampleInputName1" required>
-                        <div class="valid-feedback">Nombre registrado correctamente</div>
-                        <div class="invalid-feedback">Por favor, ingrese un nombre</div>
-                    </div>
+            <div class="col-lg-7 col-md-12 mt-4 mb-4">
+                <div class="card h-100 px-4 py-3">
+                    <form class="needs-validation" novalidate>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputName1" required>
+                            
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            required>
-                        <div class="valid-feedback">Correo registrado correctamente</div>
-                        <div class="invalid-feedback">Por favor, ingrese un correo válido</div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+                            
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="exampleInputAsunto1" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="exampleInputAsunto1" required>
-                        <div class="valid-feedback">Asunto registrado correctamente</div>
-                        <div class="invalid-feedback">Por favor, ingrese un asunto</div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="InputPassword" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="InputPassword" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="exampleInputMensage1" class="form-label">Mensaje</label>
-                        <textarea rows="5" class="form-control" id="exampleInputMensage1" required></textarea>
-                        <div class="valid-feedback">Mensaje registrado correctamente</div>
-                        <div class="invalid-feedback">Por favor, ingrese un mensaje</div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="InputEdad" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="InputEdad" required>
+                        </div>
 
-                    <button type="submit" class="btn btn-outline-primary">Enviar</button>
-                </form>
+                        <div class="mb-3">
+                            <label for="InputFecha_Nacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="InputFecha_Nacimiento" required>
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="InputHora_Cita" class="form-label">Hora de Cita</label>
+                            <input type="time" class="form-control" id="InputHora_Cita" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="InputColor" class="form-label">Color</label><br>
+                            <input type="color" class="form-control form-control-color" id="InputColor" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="InputArchivo" class="form-label">Subir Archivo</label>
+                            <input type="file" class="form-control" id="InputArchivo" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="InputPais" class="form-label">País</label>
+                            <select class="form-select" id="InputPais" required>
+                                <option selected disabled value="">Seleccione un país</option>
+                                <option value="mx">México</option>
+                                <option value="ar">Argentina</option>
+                                <option value="co">Colombia</option>
+                                <option value="cl">Chile</option>
+                                <option value="es">España</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="InputComentarios" class="form-label">Comentarios</label>
+                            <textarea rows="4" class="form-control" id="InputComentarios"
+                                placeholder="Déjanos tus comentarios acerca de nuestra página." required></textarea>
+                            
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Género</label><br>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="genero" id="Masculino"
+                                    value="Masculino" required>
+                                <label class="form-check-label" for="Masculino">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="genero" id="Femenino"
+                                    value="Femenino" required>
+                                <label class="form-check-label" for="Femenino">Femenino</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Intereses</label><br>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="Musica" value="Música">
+                                <label class="form-check-label" for="Musica">Música</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="Deporte" value="Deporte">
+                                <label class="form-check-label" for="Deporte">Deporte</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="Lectura" value="Lectura">
+                                <label class="form-check-label" for="Lectura">Lectura</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="InputNivel_Satisfaccion" class="form-label">Nivel de satisfacción</label>
+                            <input type="range" class="form-range" id="InputNivel_Satisfaccion" min="0" max="10"
+                                required>
+                        </div>
+
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="InputRecibir_Novedades">
+                            <label class="form-check-label" for="InputRecibir_Novedades">Deseo recibir novedades</label>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
 
-            <div class="col-lg-5 col-md-7 mt-4">
+            <div class="col-lg-5 col-md-5 mt-4">
                 <div class="contact-info">
-                    <h4 class="fw-semibold">Información de contacto</h4>
+                    <h4 class="fw-semibold">Información de Contacto</h4>
                     <p><i class="bi bi-geo-alt-fill text-primary"></i> Bogotá, Colombia</p>
                     <p><i class="bi bi-envelope-fill text-primary"></i> contacto@dstechnology.com</p>
                     <p><i class="bi bi-phone-fill text-primary"></i> +57 300 000 0000</p>
@@ -143,20 +223,20 @@
         </script>
 
     <script>
-                    (() => {
-                        'use strict'
-                        const forms = document.querySelectorAll('.needs-validation')
-                        Array.from(forms).forEach(form => {
-                            form.addEventListener('submit', event => {
-                                if (!form.checkValidity()) {
-                                    event.preventDefault()
-                                    event.stopPropagation()
-                                }
-                                form.classList.add('was-validated')
-                            }, false)
-                        })
-                    })()
-                </script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 
 </body>
 
