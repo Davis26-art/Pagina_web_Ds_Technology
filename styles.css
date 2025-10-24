@@ -4,3 +4,49 @@ body {
     font-weight: 100;
     font-style: normal;
 }
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.3);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link:hover {
+    color: #0dcaf0 !important;
+}
+
+.btn-outline-primary {
+    color: rgb(28, 46, 51);
+    border-color: rgb(28, 46, 51);
+}
+.btn-outline-primary:hover {
+    background-color: rgb(28, 46, 51);
+    color: white;
+}
+
+.card img {
+    border-radius: 8px;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+main {
+    margin-top: 5rem;
+    padding-top: 2rem;
+}
+
+footer {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
