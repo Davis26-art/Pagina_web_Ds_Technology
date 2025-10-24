@@ -73,22 +73,39 @@
         <div class="row">
 
             <div class="col-lg-7 col-md-7 mt-4">
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="mb-3">
                         <label for="exampleInputName1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputName1" required>
+                        <div class="valid-feedback">Nombre registrado correctamente</div>
+                        <div class="invalid-feedback">Por favor, ingrese un nombre</div>
                     </div>
+
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            required>
+                        <div class="valid-feedback">Correo registrado correctamente</div>
+                        <div class="invalid-feedback">Por favor, ingrese un correo válido</div>
                     </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputAsunto1" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="exampleInputAsunto1" required>
+                        <div class="valid-feedback">Asunto registrado correctamente</div>
+                        <div class="invalid-feedback">Por favor, ingrese un asunto</div>
+                    </div>
+
                     <div class="mb-3">
                         <label for="exampleInputMensage1" class="form-label">Mensaje</label>
-                        <textarea rows="5" class="form-control" name="" id="exampleInputMensage1"></textarea>
+                        <textarea rows="5" class="form-control" id="exampleInputMensage1" required></textarea>
+                        <div class="valid-feedback">Mensaje registrado correctamente</div>
+                        <div class="invalid-feedback">Por favor, ingrese un mensaje</div>
                     </div>
 
                     <button type="submit" class="btn btn-outline-primary">Enviar</button>
                 </form>
+
             </div>
 
             <div class="col-lg-5 col-md-7 mt-4">
@@ -121,6 +138,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+
+    <script>
+                    (() => {
+                        'use strict'
+                        const forms = document.querySelectorAll('.needs-validation')
+                        Array.from(forms).forEach(form => {
+                            form.addEventListener('submit', event => {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                    })()
+                </script>
+
 </body>
 
 </html>
